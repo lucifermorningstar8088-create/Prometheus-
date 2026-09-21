@@ -7,10 +7,10 @@ name = "prometheus-agent"
 version = "0.1.0"
 description = "Secure autonomous personal operating agent"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["fastapi>=0.115", "uvicorn[standard]>=0.34", "pydantic>=2.10"]
 
 [project.optional-dependencies]
-test = ["pytest>=8"]
+test = ["pytest>=8", "httpx>=0.28"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
