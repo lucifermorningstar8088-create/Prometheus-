@@ -1,0 +1,17 @@
+language: en-US
+reviews:
+  profile: assertive
+  high_level_summary: true
+  review_status: true
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "app/**"
+      instructions: |
+        Check security boundaries, least privilege, unsafe subprocess usage, secret leakage, state correctness, and test coverage.
+    - path: "tests/**"
+      instructions: |
+        Check that tests validate behavior rather than implementation details and include failure/security cases.
+chat:
+  auto_reply: true
